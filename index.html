@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Admission Form</h1>
+    <form action="" id="studentForm">
+
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="name">Age : </label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="class">Class : </label>
+        <input type="text" id="class" name="class" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form><br><br>
+
+
+    <table id="studentTable">
+        <thead>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Class</td>
+            <td>Action</td>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <div id="editFormContent" class="hidden">
+
+        <h1>Edit Admission Form</h1>
+
+        <form action="" id="editStudentForm">
+
+            <input type="hidden" id="editIndex">
+
+            <label for="name">Name : </label>
+            <input type="text" id="editName" name="name" required><br><br>
+
+            <label for="name">Age : </label>
+            <input type="number" id="editAge" name="age" required><br><br>
+
+            <label for="class">Class : </label>
+            <input type="text" id="editClass" name="class" required><br><br>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
